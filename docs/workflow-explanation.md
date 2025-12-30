@@ -1,6 +1,6 @@
-->Workflow Explanation – Safe Route Optimization (n8n)
+#Workflow Explanation – Safe Route Optimization (n8n)
 This document explains the complete n8n workflow, decision logic, and sample output used in the Safe Route Optimization at Night project. The workflow is designed to prioritize route safety over shortest distance using multi-criteria evaluation.
-->Workflow Overview
+#Workflow Overview
 Webhook → Google Sheets → Code → Respond to Webhook
 It accepts a route request, evaluates multiple candidate routes based on safety parameters, and returns the safest route.It accepts a route request, evaluates multiple candidate routes based on safety parameters, and returns the safest route.
 Nodes Used and Their Roles
@@ -74,7 +74,7 @@ Acts as the API response layer
 }
  Although Brigade Road is faster, Richmond Road is selected due to higher safety.
 
-->Key Design Decisions
+#Key Design Decisions
 
 Safety Score takes precedence over distance
 
